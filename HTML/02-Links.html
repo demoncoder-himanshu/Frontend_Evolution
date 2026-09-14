@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HTML Links</title>
+</head>
+
+<body>
+
+    <!--
+        a:
+        Used to create hyperlinks.
+        A hyperlink allows the user to navigate to another page,
+        website, file, section, email address, or other resource.
+    -->
+
+    <a href="https://www.google.com">Visit Google</a>
+
+
+    <!--
+        href:
+        Specifies the destination of the hyperlink.
+        It can contain a URL, file path, email address,
+        phone number, or an element ID.
+    -->
+
+    <a href="https://www.example.com">
+        Visit Example
+    </a>
+
+
+    <!--
+        target="_blank":
+        Opens the linked page in a new browsing context,
+        usually a new browser tab.
+    -->
+
+    <a href="https://www.google.com" target="_blank">
+        Open Google in a New Tab
+    </a>
+
+
+    <!--
+        rel="noopener":
+        Used with target="_blank" to prevent the newly opened page
+        from getting access to the original window through window.opener.
+    -->
+
+    <a
+        href="https://www.example.com"
+        target="_blank"
+        rel="noopener"
+    >
+        Open Example Safely
+    </a>
+
+
+    <!--
+        target="_self":
+        Opens the link in the current browsing context.
+        This is the default behavior of an <a> element.
+    -->
+
+    <a href="https://www.google.com" target="_self">
+        Open in Current Tab
+    </a>
+
+
+    <!--
+        target="_parent":
+        Opens the linked page in the parent browsing context.
+        It is mainly useful when working with frames or iframes.
+    -->
+
+    <a href="https://www.example.com" target="_parent">
+        Open in Parent
+    </a>
+
+
+    <!--
+        target="_top":
+        Opens the linked page in the top-level browsing context.
+        It is mainly useful when working with nested frames.
+    -->
+
+    <a href="https://www.example.com" target="_top">
+        Open at Top Level
+    </a>
+
+
+    <!--
+        title:
+        Provides additional information about the link.
+        Browsers commonly display it as a tooltip when
+        the user hovers over the link.
+    -->
+
+    <a
+        href="https://www.example.com"
+        title="Visit Example Website"
+    >
+        Example Website
+    </a>
+
+
+    <!--
+        download:
+        Tells the browser that the linked resource should
+        be downloaded instead of navigated to.
+
+        This is mainly useful for files.
+    -->
+
+    <a href="files/example.pdf" download>
+        Download PDF
+    </a>
+
+
+    <!--
+        download="filename":
+        Suggests a filename for the downloaded resource.
+    -->
+
+    <a
+        href="files/example.pdf"
+        download="my-document.pdf"
+    >
+        Download Document
+    </a>
+
+
+    <!--
+        mailto:
+        Used with href to create a link that opens
+        the user's default email application.
+    -->
+
+    <a href="mailto:example@email.com">
+        Send an Email
+    </a>
+
+
+    <!--
+        tel:
+        Used with href to create a link for calling
+        a phone number on supported devices.
+    -->
+
+    <a href="tel:+1234567890">
+        Call Us
+    </a>
+
+
+    <!--
+        Linking to another HTML file:
+        A relative path can be used to navigate
+        between pages within the same website.
+    -->
+
+    <a href="about.html">
+        About Us
+    </a>
+
+
+    <!--
+        Linking to a folder:
+        You can use a relative path to access
+        a page inside another folder.
+    -->
+
+    <a href="pages/contact.html">
+        Contact Page
+    </a>
+
+
+    <!--
+        Linking to a section on the same page:
+        Add an id to an element and use #id in href
+        to navigate directly to that element.
+    -->
+
+    <h2 id="about">
+        About This Page
+    </h2>
+
+    <a href="#about">
+        Go to About Section
+    </a>
+
+
+    <!--
+        Linking to a section on another page:
+        You can combine a page path with an element ID.
+    -->
+
+    <a href="about.html#team">
+        Go to Team Section
+    </a>
+
+
+    <!--
+        Multiple links can be placed together
+        to create simple navigation.
+    -->
+
+    <nav>
+
+        <a href="index.html">Home</a>
+
+        <a href="about.html">About</a>
+
+        <a href="services.html">Services</a>
+
+        <a href="contact.html">Contact</a>
+
+    </nav>
+
+
+</body>
+</html>
