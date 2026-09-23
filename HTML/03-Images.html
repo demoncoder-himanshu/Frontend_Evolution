@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HTML Images</title>
+</head>
+
+<body>
+
+    <!--
+        img:
+        Used to embed an image into an HTML document.
+        It is a void element, so it does not have a closing tag.
+    -->
+
+    <img src="image.jpg" alt="A beautiful landscape">
+
+
+    <!--
+        src:
+        Specifies the path or URL of the image
+        that should be displayed.
+    -->
+
+    <img src="images/cat.jpg" alt="A cat">
+
+
+    <!--
+        alt:
+        Provides alternative text that describes the image.
+
+        It is useful when:
+        - The image cannot be loaded.
+        - Screen readers are being used.
+        - The image needs a text description.
+    -->
+
+    <img src="cat.jpg" alt="A small white cat">
+
+
+    <!--
+        width:
+        Specifies the width of the image.
+        The value is generally given in pixels when used as
+        an HTML attribute.
+    -->
+
+    <img
+        src="cat.jpg"
+        alt="A small white cat"
+        width="300"
+    >
+
+
+    <!--
+        height:
+        Specifies the height of the image.
+    -->
+
+    <img
+        src="cat.jpg"
+        alt="A small white cat"
+        width="300"
+        height="200"
+    >
+
+
+    <!--
+        loading="lazy":
+        Tells the browser to delay loading the image
+        until it is close to entering the visible area.
+
+        This can improve page loading performance,
+        especially when there are many images.
+    -->
+
+    <img
+        src="large-image.jpg"
+        alt="Large landscape"
+        loading="lazy"
+    >
+
+
+    <!--
+        loading="eager":
+        Tells the browser to load the image immediately.
+
+        This is the default behavior for images
+        unless another loading behavior is specified.
+    -->
+
+    <img
+        src="important-image.jpg"
+        alt="Important image"
+        loading="eager"
+    >
+
+
+    <!--
+        title:
+        Provides additional information about the image.
+        Browsers may display it as a tooltip when
+        the user hovers over the image.
+    -->
+
+    <img
+        src="cat.jpg"
+        alt="A small white cat"
+        title="This is a cat"
+    >
+
+
+    <!--
+        Using an absolute URL:
+        An image can also be loaded from another website
+        by providing its complete URL.
+    -->
+
+    <img
+        src="https://example.com/image.jpg"
+        alt="Example image"
+    >
+
+
+    <!--
+        Image inside a link:
+        An image can be placed inside an <a> element
+        to make the image clickable.
+    -->
+
+    <a href="https://example.com">
+
+        <img
+            src="logo.png"
+            alt="Example Website Logo"
+        >
+
+    </a>
+
+
+    <!--
+        picture:
+        Used to provide different versions of an image
+        depending on the screen size, resolution, or format.
+
+        The browser chooses the most appropriate source.
+    -->
+
+    <picture>
+
+        <source
+            media="(max-width: 600px)"
+            srcset="mobile.jpg"
+        >
+
+        <img
+            src="desktop.jpg"
+            alt="Responsive landscape"
+        >
+
+    </picture>
+
+
+    <!--
+        source:
+        Specifies an alternative media/image source.
+
+        It is commonly used inside <picture>, <audio>,
+        and <video>.
+    -->
+
+    <picture>
+
+        <source
+            srcset="image.webp"
+            type="image/webp"
+        >
+
+        <img
+            src="image.jpg"
+            alt="Example image"
+        >
+
+    </picture>
+
+
+    <!--
+        srcset:
+        Provides multiple image sources with different sizes
+        or resolutions so the browser can choose the
+        most appropriate one.
+    -->
+
+    <img
+        src="small.jpg"
+        srcset="
+            small.jpg 480w,
+            medium.jpg 800w,
+            large.jpg 1200w
+        "
+        sizes="(max-width: 600px) 480px, 800px"
+        alt="Responsive image"
+    >
+
+
+</body>
+</html>
