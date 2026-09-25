@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HTML Tables</title>
+</head>
+
+<body>
+
+    <!--
+        table:
+        Used to represent tabular data
+        arranged in rows and columns.
+    -->
+
+    <table>
+
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>City</th>
+        </tr>
+
+        <tr>
+            <td>Himanshu</td>
+            <td>20</td>
+            <td>Delhi</td>
+        </tr>
+
+        <tr>
+            <td>Rahul</td>
+            <td>21</td>
+            <td>Mumbai</td>
+        </tr>
+
+    </table>
+
+
+    <!--
+        caption:
+        Used to provide a title or caption
+        that describes what the table is about.
+    -->
+
+    <table>
+
+        <caption>Student Information</caption>
+
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+
+        <tr>
+            <td>Himanshu</td>
+            <td>20</td>
+        </tr>
+
+    </table>
+
+
+    <!--
+        tr:
+        Stands for "Table Row".
+        Used to create a row inside a table.
+    -->
+
+    <table>
+
+        <tr>
+            <td>Row 1 - Column 1</td>
+            <td>Row 1 - Column 2</td>
+        </tr>
+
+        <tr>
+            <td>Row 2 - Column 1</td>
+            <td>Row 2 - Column 2</td>
+        </tr>
+
+    </table>
+
+
+    <!--
+        th:
+        Stands for "Table Header".
+        Used to define a header cell.
+        Browsers normally display header cells as bold
+        and centered by default.
+    -->
+
+    <table>
+
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Age</th>
+        </tr>
+
+        <tr>
+            <td>Himanshu</td>
+            <td>himanshu@example.com</td>
+            <td>20</td>
+        </tr>
+
+    </table>
+
+
+    <!--
+        td:
+        Stands for "Table Data".
+        Used to define a normal data cell.
+    -->
+
+    <table>
+
+        <tr>
+            <td>HTML</td>
+            <td>CSS</td>
+            <td>JavaScript</td>
+        </tr>
+
+    </table>
+
+
+    <!--
+        thead:
+        Stands for "Table Head".
+        Groups the header rows of a table.
+    -->
+
+    <table>
+
+        <thead>
+
+            <tr>
+                <th>Product</th>
+                <th>Price</th>
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+            <tr>
+                <td>Laptop</td>
+                <td>$1000</td>
+            </tr>
+
+        </tbody>
+
+    </table>
+
+
+    <!--
+        tbody:
+        Stands for "Table Body".
+        Groups the main data rows of a table.
+    -->
+
+    <table>
+
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Score</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+            <tr>
+                <td>Himanshu</td>
+                <td>90</td>
+            </tr>
+
+            <tr>
+                <td>Rahul</td>
+                <td>85</td>
+            </tr>
+
+        </tbody>
+
+    </table>
+
+
+    <!--
+        tfoot:
+        Stands for "Table Foot".
+        Groups footer rows, such as totals or summaries.
+    -->
+
+    <table>
+
+        <thead>
+
+            <tr>
+                <th>Item</th>
+                <th>Price</th>
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+            <tr>
+                <td>Keyboard</td>
+                <td>$50</td>
+            </tr>
+
+            <tr>
+                <td>Mouse</td>
+                <td>$30</td>
+            </tr>
+
+        </tbody>
+
+        <tfoot>
+
+            <tr>
+                <th>Total</th>
+                <td>$80</td>
+            </tr>
+
+        </tfoot>
+
+    </table>
+
+
+    <!--
+        colspan:
+        Used to make a table cell span across
+        multiple columns.
+    -->
+
+    <table>
+
+        <tr>
+            <th colspan="3">Student Information</th>
+        </tr>
+
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>City</th>
+        </tr>
+
+        <tr>
+            <td>Himanshu</td>
+            <td>20</td>
+            <td>Delhi</td>
+        </tr>
+
+    </table>
+
+
+    <!--
+        rowspan:
+        Used to make a table cell span across
+        multiple rows.
+    -->
+
+    <table>
+
+        <tr>
+            <th>Name</th>
+            <th>Subject</th>
+        </tr>
+
+        <tr>
+            <td rowspan="2">Himanshu</td>
+            <td>HTML</td>
+        </tr>
+
+        <tr>
+            <td>CSS</td>
+        </tr>
+
+    </table>
+
+
+    <!--
+        scope:
+        Used with <th> to specify whether the header
+        describes a column or a row.
+
+        scope="col" → Header describes a column.
+        scope="row" → Header describes a row.
+    -->
+
+    <table>
+
+        <thead>
+
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Age</th>
+                <th scope="col">City</th>
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+            <tr>
+                <th scope="row">Himanshu</th>
+                <td>20</td>
+                <td>Delhi</td>
+            </tr>
+
+        </tbody>
+
+    </table>
+
+
+    <!--
+        colgroup:
+        Used to group one or more columns
+        so that they can be styled or identified together.
+    -->
+
+    <table>
+
+        <colgroup>
+            <col>
+            <col>
+            <col>
+        </colgroup>
+
+        <thead>
+
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>City</th>
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+            <tr>
+                <td>Himanshu</td>
+                <td>20</td>
+                <td>Delhi</td>
+            </tr>
+
+        </tbody>
+
+    </table>
+
+
+    <!--
+        col:
+        Represents a column inside a <colgroup>.
+        It can be used to apply properties to
+        an entire column.
+    -->
+
+    <table>
+
+        <colgroup>
+
+            <col>
+            <col>
+            <col>
+
+        </colgroup>
+
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>City</th>
+        </tr>
+
+        <tr>
+            <td>Himanshu</td>
+            <td>20</td>
+            <td>Delhi</td>
+        </tr>
+
+    </table>
+
+
+</body>
+</html>

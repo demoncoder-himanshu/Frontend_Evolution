@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HTML Forms</title>
+</head>
+
+<body>
+
+    <!--
+        form:
+        Used to create a form that collects user input.
+        Forms are commonly used for login, registration,
+        search, contact forms, payments, etc.
+    -->
+
+    <form>
+
+        <!--
+            label:
+            Used to provide a text label for a form control.
+            The "for" attribute connects the label to an
+            input using the input's "id".
+        -->
+
+        <label for="username">Username:</label>
+
+        <!--
+            input:
+            Used to create different types of form controls.
+            The type attribute determines what kind of input
+            the browser should display.
+        -->
+
+        <input type="text" id="username" name="username">
+
+
+        <!--
+            type="text":
+            Used to accept a single line of plain text.
+        -->
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+
+
+        <!--
+            type="password":
+            Used to accept passwords.
+            Characters are normally hidden while typing.
+        -->
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
+
+
+        <!--
+            type="email":
+            Used to accept an email address.
+            Browsers can perform basic email validation.
+        -->
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+
+
+        <!--
+            type="number":
+            Used to accept numeric input.
+        -->
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age">
+
+
+        <!--
+            type="tel":
+            Used to accept a telephone number.
+        -->
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone">
+
+
+        <!--
+            type="url":
+            Used to accept a URL/web address.
+            Browsers can perform basic URL validation.
+        -->
+
+        <label for="website">Website:</label>
+        <input type="url" id="website" name="website">
+
+
+        <!--
+            type="search":
+            Used for search input.
+            It behaves similarly to a text input but
+            can provide search-specific browser behavior.
+        -->
+
+        <label for="search">Search:</label>
+        <input type="search" id="search" name="search">
+
+
+        <!--
+            type="date":
+            Used to select a date.
+        -->
+
+        <label for="birthdate">Birth Date:</label>
+        <input type="date" id="birthdate" name="birthdate">
+
+
+        <!--
+            type="time":
+            Used to select a time.
+        -->
+
+        <label for="time">Time:</label>
+        <input type="time" id="time" name="time">
+
+
+        <!--
+            type="datetime-local":
+            Used to select a date and time
+            without a time zone.
+        -->
+
+        <label for="meeting">Meeting:</label>
+        <input
+            type="datetime-local"
+            id="meeting"
+            name="meeting"
+        >
+
+
+        <!--
+            type="month":
+            Used to select a month and year.
+        -->
+
+        <label for="month">Month:</label>
+        <input type="month" id="month" name="month">
+
+
+        <!--
+            type="week":
+            Used to select a week and year.
+        -->
+
+        <label for="week">Week:</label>
+        <input type="week" id="week" name="week">
+
+
+        <!--
+            type="color":
+            Used to allow the user to select a color.
+        -->
+
+        <label for="color">Favorite Color:</label>
+        <input type="color" id="color" name="color">
+
+
+        <!--
+            type="range":
+            Used to select a value from a range.
+            min and max define the range.
+        -->
+
+        <label for="volume">Volume:</label>
+
+        <input
+            type="range"
+            id="volume"
+            name="volume"
+            min="0"
+            max="100"
+        >
+
+
+        <!--
+            type="checkbox":
+            Used when the user can select zero or more options.
+        -->
+
+        <p>Choose your skills:</p>
+
+        <input
+            type="checkbox"
+            id="html"
+            name="skills"
+            value="html"
+        >
+
+        <label for="html">HTML</label>
+
+
+        <input
+            type="checkbox"
+            id="css"
+            name="skills"
+            value="css"
+        >
+
+        <label for="css">CSS</label>
+
+
+        <input
+            type="checkbox"
+            id="javascript"
+            name="skills"
+            value="javascript"
+        >
+
+        <label for="javascript">JavaScript</label>
+
+
+        <!--
+            type="radio":
+            Used when the user should select only one option
+            from a group of options.
+
+            Radio buttons belong to the same group when
+            they have the same "name".
+        -->
+
+        <p>Choose your gender:</p>
+
+        <input
+            type="radio"
+            id="male"
+            name="gender"
+            value="male"
+        >
+
+        <label for="male">Male</label>
+
+
+        <input
+            type="radio"
+            id="female"
+            name="gender"
+            value="female"
+        >
+
+        <label for="female">Female</label>
+
+
+        <input
+            type="radio"
+            id="other"
+            name="gender"
+            value="other"
+        >
+
+        <label for="other">Other</label>
+
+
+        <!--
+            type="file":
+            Used to allow the user to select a file
+            from their device.
+        -->
+
+        <label for="file">Upload File:</label>
+
+        <input
+            type="file"
+            id="file"
+            name="file"
+        >
+
+
+        <!--
+            multiple:
+            Allows the user to select multiple files
+            when used with a file input.
+        -->
+
+        <label for="files">Upload Multiple Files:</label>
+
+        <input
+            type="file"
+            id="files"
+            name="files"
+            multiple
+        >
+
+
+        <!--
+            accept:
+            Specifies the types of files that can be selected
+            when using a file input.
+        -->
+
+        <label for="image">Upload Image:</label>
+
+        <input
+            type="file"
+            id="image"
+            name="image"
+            accept="image/*"
+        >
+
+
+        <!--
+            textarea:
+            Used for multi-line text input.
+            It is commonly used for messages,
+            comments, descriptions, etc.
+        -->
+
+        <label for="message">Message:</label>
+
+        <textarea
+            id="message"
+            name="message"
+            rows="5"
+            cols="30"
+        ></textarea>
+
+
+        <!--
+            select:
+            Used to create a dropdown menu.
+        -->
+
+        <label for="country">Country:</label>
+
+        <select id="country" name="country">
+
+            <!--
+                option:
+                Represents one option inside a <select>.
+            -->
+
+            <option value="india">India</option>
+            <option value="usa">USA</option>
+            <option value="uk">United Kingdom</option>
+            <option value="japan">Japan</option>
+
+        </select>
+
+
+        <!--
+            selected:
+            Makes an option selected by default.
+        -->
+
+        <label for="language">Language:</label>
+
+        <select id="language" name="language">
+
+            <option value="cpp">C++</option>
+
+            <option value="java" selected>
+                Java
+            </option>
+
+            <option value="python">Python</option>
+
+        </select>
+
+
+        <!--
+            disabled:
+            Disables a form control.
+            The user cannot interact with it.
+        -->
+
+        <input
+            type="text"
+            value="This input is disabled"
+            disabled
+        >
+
+
+        <!--
+            readonly:
+            Makes an input read-only.
+            The user can see/select the value but
+            cannot modify it.
+        -->
+
+        <input
+            type="text"
+            value="This value cannot be changed"
+            readonly
+        >
+
+
+        <!--
+            placeholder:
+            Displays a temporary hint inside an input.
+            It disappears when the user starts typing.
+        -->
+
+        <label for="username2">Username:</label>
+
+        <input
+            type="text"
+            id="username2"
+            name="username2"
+            placeholder="Enter your username"
+        >
+
+
+        <!--
+            required:
+            Makes a form control mandatory.
+            The browser will not allow the form to be
+            submitted without a value.
+        -->
+
+        <label for="required-email">Email:</label>
+
+        <input
+            type="email"
+            id="required-email"
+            name="required-email"
+            required
+        >
+
+
+        <!--
+            minlength:
+            Specifies the minimum number of characters
+            allowed in a text input.
+        -->
+
+        <label for="username3">Username:</label>
+
+        <input
+            type="text"
+            id="username3"
+            name="username3"
+            minlength="3"
+        >
+
+
+        <!--
+            maxlength:
+            Specifies the maximum number of characters
+            allowed in a text input.
+        -->
+
+        <label for="username4">Username:</label>
+
+        <input
+            type="text"
+            id="username4"
+            name="username4"
+            maxlength="20"
+        >
+
+
+        <!--
+            min:
+            Specifies the minimum allowed value.
+            Commonly used with number, range, date, etc.
+        -->
+
+        <label for="age2">Age:</label>
+
+        <input
+            type="number"
+            id="age2"
+            name="age2"
+            min="18"
+        >
+
+
+        <!--
+            max:
+            Specifies the maximum allowed value.
+        -->
+
+        <label for="age3">Age:</label>
+
+        <input
+            type="number"
+            id="age3"
+            name="age3"
+            max="100"
+        >
+
+
+        <!--
+            step:
+            Specifies the allowed interval between values.
+        -->
+
+        <label for="price">Price:</label>
+
+        <input
+            type="number"
+            id="price"
+            name="price"
+            min="0"
+            max="10000"
+            step="100"
+        >
+
+
+        <!--
+            value:
+            Specifies the initial/default value of a form control.
+        -->
+
+        <input
+            type="text"
+            name="username5"
+            value="Himanshu"
+        >
+
+
+        <!--
+            name:
+            Gives a form control a name.
+            The name is important when form data is submitted.
+        -->
+
+        <input
+            type="text"
+            name="username6"
+        >
+
+
+        <!--
+            id:
+            Gives an element a unique identifier.
+            It is commonly used to connect a <label>
+            with an input and to target elements with CSS/JavaScript.
+        -->
+
+        <input
+            type="text"
+            id="unique-input"
+            name="unique-input"
+        >
+
+        <label for="unique-input">
+            Unique Input
+        </label>
+
+
+        <!--
+            datalist:
+            Provides predefined suggestions for an input.
+            The user can still enter a value manually.
+        -->
+
+        <label for="browser">Choose a browser:</label>
+
+        <input
+            list="browsers"
+            id="browser"
+            name="browser"
+        >
+
+        <datalist id="browsers">
+
+            <option value="Chrome">
+            <option value="Firefox">
+            <option value="Edge">
+            <option value="Safari">
+
+        </datalist>
+
+
+        <!--
+            fieldset:
+            Groups related form controls together.
+        -->
+
+        <fieldset>
+
+            <!--
+                legend:
+                Provides a caption/title for a <fieldset>.
+            -->
+
+            <legend>Personal Information</legend>
+
+            <label for="first-name">First Name:</label>
+
+            <input
+                type="text"
+                id="first-name"
+                name="first-name"
+            >
+
+            <label for="last-name">Last Name:</label>
+
+            <input
+                type="text"
+                id="last-name"
+                name="last-name"
+            >
+
+        </fieldset>
+
+
+        <!--
+            button:
+            Used to create a clickable button.
+        -->
+
+        <button type="submit">
+            Submit
+        </button>
+
+
+        <!--
+            button type="reset":
+            Resets the form controls to their initial values.
+        -->
+
+        <button type="reset">
+            Reset
+        </button>
+
+
+        <!--
+            button type="button":
+            Creates a normal button with no default
+            form submission behavior.
+
+            It is commonly controlled with JavaScript.
+        -->
+
+        <button type="button">
+            Normal Button
+        </button>
+
+
+        <!--
+            submit:
+            Submits the form data.
+        -->
+
+        <input type="submit" value="Submit Form">
+
+
+        <!--
+            reset:
+            Resets the form controls to their initial values.
+        -->
+
+        <input type="reset" value="Reset Form">
+
+
+        <!--
+            hidden:
+            Creates an input that is not visible to the user.
+            It can be used to store data that should be
+            submitted along with the form.
+        -->
+
+        <input
+            type="hidden"
+            name="user-id"
+            value="12345"
+        >
+
+    </form>
+
+
+</body>
+</html>
