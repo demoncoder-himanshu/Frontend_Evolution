@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HTML Embedded Content</title>
+</head>
+
+<body>
+
+    <!--
+        iframe:
+        Stands for "Inline Frame".
+        Used to embed another HTML page or external content
+        inside the current webpage.
+
+        Common uses:
+        - Maps
+        - Videos
+        - External webpages
+        - Online documents
+        - Widgets
+    -->
+
+    <iframe
+        src="https://example.com"
+        width="600"
+        height="400"
+        title="Example Website"
+    >
+    </iframe>
+
+
+    <!--
+        src:
+        Specifies the URL or location of the content
+        that should be loaded inside the iframe.
+    -->
+
+    <iframe
+        src="about.html"
+        width="600"
+        height="400"
+        title="About Page"
+    >
+    </iframe>
+
+
+    <!--
+        width:
+        Specifies the width of the iframe.
+    -->
+
+    <iframe
+        src="about.html"
+        width="800"
+        title="About Page"
+    >
+    </iframe>
+
+
+    <!--
+        height:
+        Specifies the height of the iframe.
+    -->
+
+    <iframe
+        src="about.html"
+        width="800"
+        height="400"
+        title="About Page"
+    >
+    </iframe>
+
+
+    <!--
+        title:
+        Provides a description of the iframe content.
+
+        It is important for accessibility because
+        screen readers can use it to identify the iframe.
+    -->
+
+    <iframe
+        src="about.html"
+        width="600"
+        height="400"
+        title="About our company"
+    >
+    </iframe>
+
+
+    <!--
+        loading="lazy":
+        Delays loading the iframe until it is close
+        to becoming visible.
+
+        This can improve page performance.
+    -->
+
+    <iframe
+        src="https://example.com"
+        width="600"
+        height="400"
+        loading="lazy"
+        title="Example Website"
+    >
+    </iframe>
+
+
+    <!--
+        allowfullscreen:
+        Allows embedded content to enter fullscreen mode
+        when supported.
+    -->
+
+    <iframe
+        src="video.html"
+        width="600"
+        height="400"
+        allowfullscreen
+        title="Video"
+    >
+    </iframe>
+
+
+    <!--
+        sandbox:
+        Applies security restrictions to the content
+        loaded inside an iframe.
+
+        Without additional permissions, the embedded
+        document has several capabilities restricted.
+    -->
+
+    <iframe
+        src="https://example.com"
+        width="600"
+        height="400"
+        sandbox
+        title="Sandboxed Content"
+    >
+    </iframe>
+
+
+    <!--
+        embed:
+        Used to embed external content or resources
+        directly into a webpage.
+
+        Historically it has been used for things such as
+        PDFs and other embedded resources.
+    -->
+
+    <embed
+        src="files/document.pdf"
+        type="application/pdf"
+        width="600"
+        height="500"
+    >
+
+
+    <!--
+        src:
+        Specifies the location of the resource
+        to be embedded.
+    -->
+
+    <embed
+        src="files/document.pdf"
+        type="application/pdf"
+    >
+
+
+    <!--
+        type:
+        Specifies the MIME type of the embedded resource.
+
+        Example:
+        application/pdf → PDF document
+    -->
+
+    <embed
+        src="files/document.pdf"
+        type="application/pdf"
+        width="600"
+        height="500"
+    >
+
+
+    <!--
+        object:
+        Represents an external resource that can be embedded
+        into the document.
+
+        It can be used for resources such as PDFs
+        and other browser-supported content.
+    -->
+
+    <object
+        data="files/document.pdf"
+        type="application/pdf"
+        width="600"
+        height="500"
+    >
+        <p>
+            Your browser cannot display this PDF.
+        </p>
+    </object>
+
+
+    <!--
+        data:
+        Specifies the URL/location of the resource
+        that the <object> element should load.
+    -->
+
+    <object
+        data="files/document.pdf"
+        type="application/pdf"
+    >
+        <p>
+            Unable to display the document.
+        </p>
+    </object>
+
+
+    <!--
+        fallback content:
+        Content placed inside <object> can act as a fallback
+        when the browser cannot display the embedded resource.
+    -->
+
+    <object
+        data="files/document.pdf"
+        type="application/pdf"
+    >
+
+        <p>
+            This browser does not support displaying this PDF.
+        </p>
+
+        <a href="files/document.pdf">
+            Download the PDF
+        </a>
+
+    </object>
+
+
+    <!--
+        canvas:
+        Provides a drawable area for graphics.
+
+        JavaScript is normally used with <canvas>
+        to draw:
+        - Shapes
+        - Images
+        - Animations
+        - Games
+        - Charts
+    -->
+
+    <canvas
+        id="myCanvas"
+        width="500"
+        height="300"
+    >
+        Your browser does not support canvas.
+    </canvas>
+
+
+    <!--
+        id:
+        Gives the canvas a unique identifier.
+        JavaScript can use this ID to access the canvas.
+    -->
+
+    <canvas
+        id="gameCanvas"
+        width="800"
+        height="600"
+    >
+    </canvas>
+
+
+    <!--
+        width:
+        Defines the internal width of the canvas
+        in pixels.
+    -->
+
+    <canvas
+        id="canvasWidth"
+        width="800"
+    >
+    </canvas>
+
+
+    <!--
+        height:
+        Defines the internal height of the canvas
+        in pixels.
+    -->
+
+    <canvas
+        id="canvasHeight"
+        width="500"
+        height="300"
+    >
+    </canvas>
+
+
+    <!--
+        svg:
+        Stands for "Scalable Vector Graphics".
+
+        Used to create vector-based graphics
+        directly inside HTML.
+
+        SVG graphics can be scaled without losing quality.
+    -->
+
+    <svg
+        width="300"
+        height="200"
+    >
+
+        <circle
+            cx="100"
+            cy="100"
+            r="50"
+            fill="blue"
+        >
+
+        </circle>
+
+    </svg>
+
+
+    <!--
+        circle:
+        SVG element used to create a circle.
+
+        cx → X coordinate of the center
+        cy → Y coordinate of the center
+        r  → Radius
+    -->
+
+    <svg
+        width="300"
+        height="200"
+    >
+
+        <circle
+            cx="100"
+            cy="100"
+            r="50"
+        >
+        </circle>
+
+    </svg>
+
+
+    <!--
+        rect:
+        SVG element used to create a rectangle.
+    -->
+
+    <svg
+        width="400"
+        height="200"
+    >
+
+        <rect
+            x="50"
+            y="50"
+            width="200"
+            height="100"
+        >
+        </rect>
+
+    </svg>
+
+
+    <!--
+        line:
+        SVG element used to draw a straight line.
+
+        x1, y1 → Starting point
+        x2, y2 → Ending point
+    -->
+
+    <svg
+        width="400"
+        height="200"
+    >
+
+        <line
+            x1="50"
+            y1="50"
+            x2="300"
+            y2="150"
+            stroke="black"
+        >
+        </line>
+
+    </svg>
+
+
+    <!--
+        polygon:
+        SVG element used to create a shape
+        made from multiple connected points.
+    -->
+
+    <svg
+        width="400"
+        height="300"
+    >
+
+        <polygon
+            points="200,50 300,200 100,200"
+        >
+        </polygon>
+
+    </svg>
+
+
+</body>
+</html>

@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!--
+        charset:
+        Specifies the character encoding used by the document.
+        UTF-8 supports most characters and symbols.
+    -->
+
+    <meta charset="UTF-8">
+
+
+    <!--
+        name + content:
+        Used to provide metadata about the document.
+
+        "viewport" is commonly used to make webpages
+        work properly on different screen sizes.
+    -->
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+
+    <!--
+        title:
+        Defines the title of the webpage.
+        It appears in the browser tab.
+    -->
+
+    <title>HTML Attributes</title>
+
+</head>
+
+
+<body>
+
+
+    <!-- ================================================= -->
+    <!--                     GLOBAL ATTRIBUTES              -->
+    <!-- ================================================= -->
+
+
+    <!--
+        id:
+        Gives an element a unique identifier.
+
+        It can be used by:
+        - CSS
+        - JavaScript
+        - Links
+    -->
+
+    <p id="intro">
+        This paragraph has a unique ID.
+    </p>
+
+
+    <!--
+        class:
+        Assigns one or more classes to an element.
+
+        Classes are commonly used by:
+        - CSS
+        - JavaScript
+    -->
+
+    <p class="text">
+        This paragraph belongs to the "text" class.
+    </p>
+
+
+    <!--
+        Multiple classes:
+        An element can have multiple classes.
+    -->
+
+    <p class="text important highlighted">
+        This element has multiple classes.
+    </p>
+
+
+    <!--
+        title:
+        Provides additional information about an element.
+
+        Browsers commonly display it as a tooltip
+        when the user hovers over the element.
+    -->
+
+    <p title="This is additional information">
+        Hover over this text.
+    </p>
+
+
+    <!--
+        style:
+        Allows CSS to be written directly
+        inside an HTML element.
+
+        This is called inline CSS.
+
+        It is useful for quick examples,
+        but generally CSS files are preferred
+        for larger projects.
+    -->
+
+    <p style="color: blue;">
+        This text has inline styling.
+    </p>
+
+
+    <!--
+        lang:
+        Specifies the language of the content.
+
+        It can be specified on the <html> element
+        or on individual elements.
+    -->
+
+    <p lang="fr">
+        Bonjour
+    </p>
+
+
+    <!--
+        dir:
+        Specifies the direction of text.
+
+        ltr → Left to right
+        rtl → Right to left
+        auto → Browser determines the direction
+    -->
+
+    <p dir="rtl">
+        This text uses right-to-left direction.
+    </p>
+
+
+    <!--
+        hidden:
+        Hides an element from the rendered page.
+
+        JavaScript can later remove the attribute
+        to make the element visible.
+    -->
+
+    <p hidden>
+        This text is hidden.
+    </p>
+
+
+    <!--
+        tabindex:
+        Controls whether an element can receive
+        keyboard focus and its position in the
+        keyboard navigation order.
+    -->
+
+    <button tabindex="1">
+        First Button
+    </button>
+
+    <button tabindex="2">
+        Second Button
+    </button>
+
+
+    <!--
+        contenteditable:
+        Makes the content of an element editable
+        directly by the user.
+    -->
+
+    <p contenteditable="true">
+        You can edit this text.
+    </p>
+
+
+    <!--
+        spellcheck:
+        Specifies whether the browser should check
+        spelling and grammar for editable text.
+    -->
+
+    <p contenteditable="true" spellcheck="true">
+        This text can be spell checked.
+    </p>
+
+
+    <!--
+        draggable:
+        Specifies whether an element can be dragged.
+
+        true  → Draggable
+        false → Not draggable
+    -->
+
+    <p draggable="true">
+        Try dragging this text.
+    </p>
+
+
+    <!--
+        translate:
+        Specifies whether the content should be translated
+        when using browser translation features.
+
+        yes → Can be translated
+        no  → Should not be translated
+    -->
+
+    <p translate="no">
+        This text should not be translated.
+    </p>
+
+
+    <!--
+        accesskey:
+        Defines a keyboard shortcut that can be used
+        to focus or activate an element.
+    -->
+
+    <button accesskey="h">
+        Home
+    </button>
+
+
+    <!--
+        data-*:
+        Used to store custom data on an HTML element.
+
+        The attribute name can be anything beginning with
+        "data-".
+
+        JavaScript can access this data later.
+    -->
+
+    <div
+        data-user-id="101"
+        data-role="student"
+    >
+        User Information
+    </div>
+
+
+    <!--
+        class can also be used with multiple words
+        separated by spaces.
+    -->
+
+    <div class="container card active">
+        Multiple Classes
+    </div>
+
+
+    <!-- ================================================= -->
+    <!--                BOOLEAN ATTRIBUTES                  -->
+    <!-- ================================================= -->
+
+
+    <!--
+        Boolean attributes:
+        Their presence represents true.
+
+        Their absence represents false.
+
+        Examples include:
+        disabled
+        checked
+        required
+        readonly
+        multiple
+        selected
+        autofocus
+        hidden
+        controls
+        autoplay
+        loop
+        muted
+    -->
+
+
+    <!--
+        disabled:
+        Disables a form control.
+    -->
+
+    <button disabled>
+        Disabled Button
+    </button>
+
+
+    <!--
+        required:
+        Makes a form control mandatory.
+    -->
+
+    <input
+        type="text"
+        required
+    >
+
+
+    <!--
+        readonly:
+        Allows the user to read/select the value
+        but prevents editing.
+    -->
+
+    <input
+        type="text"
+        value="Read Only"
+        readonly
+    >
+
+
+    <!--
+        checked:
+        Makes a checkbox or radio button
+        selected by default.
+    -->
+
+    <input
+        type="checkbox"
+        checked
+    >
+
+    <label>
+        I agree
+    </label>
+
+
+    <!--
+        selected:
+        Makes an option selected by default
+        inside a <select>.
+    -->
+
+    <select>
+
+        <option>HTML</option>
+
+        <option selected>
+            CSS
+        </option>
+
+        <option>JavaScript</option>
+
+    </select>
+
+
+    <!--
+        multiple:
+        Allows multiple values to be selected.
+
+        Commonly used with:
+        - File inputs
+        - Select elements
+    -->
+
+    <input
+        type="file"
+        multiple
+    >
+
+
+    <!--
+        autofocus:
+        Automatically gives focus to the element
+        when the page loads.
+    -->
+
+    <input
+        type="text"
+        autofocus
+    >
+
+
+    <!-- ================================================= -->
+    <!--                  LINK ATTRIBUTES                   -->
+    <!-- ================================================= -->
+
+
+    <!--
+        href:
+        Specifies the destination of a hyperlink.
+    -->
+
+    <a href="https://example.com">
+        Visit Example
+    </a>
+
+
+    <!--
+        target:
+        Specifies where the linked document should open.
+
+        _self   → Current browsing context
+        _blank  → New browsing context
+        _parent → Parent browsing context
+        _top    → Top-level browsing context
+    -->
+
+    <a
+        href="https://example.com"
+        target="_blank"
+        rel="noopener"
+    >
+        Open Example
+    </a>
+
+
+    <!--
+        rel:
+        Specifies the relationship between the
+        current document and the linked resource.
+
+        "noopener" prevents the new page from getting
+        access to the original page through window.opener.
+    -->
+
+    <a
+        href="https://example.com"
+        target="_blank"
+        rel="noopener"
+    >
+        Secure External Link
+    </a>
+
+
+    <!--
+        download:
+        Suggests that the linked resource should
+        be downloaded instead of opened.
+    -->
+
+    <a
+        href="files/document.pdf"
+        download
+    >
+        Download PDF
+    </a>
+
+
+    <!-- ================================================= -->
+    <!--                  IMAGE ATTRIBUTES                   -->
+    <!-- ================================================= -->
+
+
+    <!--
+        src:
+        Specifies the location/path of an image.
+    -->
+
+    <img
+        src="images/photo.jpg"
+        alt="A photo"
+    >
+
+
+    <!--
+        alt:
+        Provides alternative text for an image.
+
+        It is important for:
+        - Accessibility
+        - Screen readers
+        - Failed image loading
+    -->
+
+    <img
+        src="images/cat.jpg"
+        alt="A white cat sitting on a chair"
+    >
+
+
+    <!--
+        width:
+        Specifies the width of an image.
+    -->
+
+    <img
+        src="images/photo.jpg"
+        alt="Photo"
+        width="300"
+    >
+
+
+    <!--
+        height:
+        Specifies the height of an image.
+    -->
+
+    <img
+        src="images/photo.jpg"
+        alt="Photo"
+        width="300"
+        height="200"
+    >
+
+
+    <!-- ================================================= -->
+    <!--                  FORM ATTRIBUTES                   -->
+    <!-- ================================================= -->
+
+
+    <!--
+        name:
+        Gives a form control a name.
+
+        It is especially important when form data
+        is submitted to a server.
+    -->
+
+    <input
+        type="text"
+        name="username"
+    >
+
+
+    <!--
+        value:
+        Specifies the initial value of a form control.
+    -->
+
+    <input
+        type="text"
+        name="username"
+        value="Himanshu"
+    >
+
+
+    <!--
+        placeholder:
+        Displays a temporary hint inside an input.
+    -->
+
+    <input
+        type="text"
+        placeholder="Enter your username"
+    >
+
+
+    <!--
+        min:
+        Specifies the minimum allowed value.
+    -->
+
+    <input
+        type="number"
+        min="1"
+    >
+
+
+    <!--
+        max:
+        Specifies the maximum allowed value.
+    -->
+
+    <input
+        type="number"
+        max="100"
+    >
+
+
+    <!--
+        step:
+        Specifies the allowed interval between values.
+    -->
+
+    <input
+        type="number"
+        min="0"
+        max="100"
+        step="5"
+    >
+
+
+    <!--
+        minlength:
+        Specifies the minimum number of characters
+        allowed in a text input.
+    -->
+
+    <input
+        type="text"
+        minlength="3"
+    >
+
+
+    <!--
+        maxlength:
+        Specifies the maximum number of characters
+        allowed in a text input.
+    -->
+
+    <input
+        type="text"
+        maxlength="20"
+    >
+
+
+    <!--
+        pattern:
+        Specifies a regular expression that the
+        input value must match.
+
+        Here, exactly 10 digits are required.
+    -->
+
+    <input
+        type="text"
+        pattern="[0-9]{10}"
+    >
+
+
+    <!--
+        accept:
+        Specifies the file types that can be selected
+        through a file input.
+    -->
+
+    <input
+        type="file"
+        accept="image/*"
+    >
+
+
+    <!--
+        list:
+        Connects an input to a <datalist>
+        to provide suggestions.
+    -->
+
+    <input
+        type="text"
+        list="languages"
+    >
+
+    <datalist id="languages">
+
+        <option value="HTML">
+        <option value="CSS">
+        <option value="JavaScript">
+
+    </datalist>
+
+
+    <!-- ================================================= -->
+    <!--                FORM-SUBMISSION ATTRIBUTES         -->
+    <!-- ================================================= -->
+
+
+    <!--
+        action:
+        Specifies where the form data should be sent
+        when the form is submitted.
+    -->
+
+    <form action="/submit">
+
+        <input
+            type="text"
+            name="username"
+        >
+
+        <button type="submit">
+            Submit
+        </button>
+
+    </form>
+
+
+    <!--
+        method:
+        Specifies the HTTP method used to submit
+        the form data.
+
+        GET  → Data is generally included in the URL.
+        POST → Data is sent in the request body.
+    -->
+
+    <form
+        action="/login"
+        method="post"
+    >
+
+        <input
+            type="text"
+            name="username"
+        >
+
+        <button type="submit">
+            Login
+        </button>
+
+    </form>
+
+
+    <!--
+        enctype:
+        Specifies how form data should be encoded
+        when the form is submitted.
+
+        "multipart/form-data" is commonly required
+        when uploading files.
+    -->
+
+    <form
+        action="/upload"
+        method="post"
+        enctype="multipart/form-data"
+    >
+
+        <input
+            type="file"
+            name="file"
+        >
+
+        <button type="submit">
+            Upload
+        </button>
+
+    </form>
+
+
+</body>
+</html>

@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HTML Miscellaneous Elements</title>
+</head>
+
+<body>
+
+
+    <!--
+        figure:
+        Used to represent self-contained content,
+        such as an image, diagram, illustration, or code example.
+    -->
+
+    <figure>
+
+        <img
+            src="images/cat.jpg"
+            alt="A cat"
+        >
+
+    </figure>
+
+
+    <!--
+        figcaption:
+        Provides a caption or description for
+        the content inside a <figure>.
+    -->
+
+    <figure>
+
+        <img
+            src="images/cat.jpg"
+            alt="A cat"
+        >
+
+        <figcaption>
+            A cat sitting on a chair.
+        </figcaption>
+
+    </figure>
+
+
+    <!--
+        blockquote:
+        Used for a longer quotation taken from
+        another source.
+    -->
+
+    <blockquote cite="https://example.com">
+
+        Learning never stops.
+
+    </blockquote>
+
+
+    <!--
+        cite:
+        Used to identify the title of a creative work,
+        such as a book, movie, song, article, etc.
+
+        It can also be used as an attribute on
+        elements such as <blockquote>.
+    -->
+
+    <p>
+        My favorite book is
+        <cite>The Alchemist</cite>.
+    </p>
+
+
+    <!--
+        q:
+        Used for a short inline quotation.
+        Browsers normally add quotation marks around it.
+    -->
+
+    <p>
+        He said, <q>Keep learning.</q>
+    </p>
+
+
+    <!--
+        abbr:
+        Used to represent an abbreviation or acronym.
+
+        The "title" attribute can provide the full meaning.
+    -->
+
+    <p>
+        <abbr title="HyperText Markup Language">
+            HTML
+        </abbr>
+        is used to structure webpages.
+    </p>
+
+
+    <!--
+        code:
+        Used to represent a short piece of computer code.
+    -->
+
+    <p>
+        Use <code>console.log()</code> to print something
+        in JavaScript.
+    </p>
+
+
+    <!--
+        pre:
+        Preserves whitespace and line breaks exactly
+        as they are written in the HTML source.
+
+        It is commonly used for code or preformatted text.
+    -->
+
+    <pre>
+This text
+    keeps its
+        original spacing.
+    </pre>
+
+
+    <!--
+        code + pre:
+        Commonly used together when displaying
+        multi-line source code.
+    -->
+
+    <pre>
+<code>
+function hello() {
+    console.log("Hello World");
+}
+</code>
+    </pre>
+
+
+    <!--
+        kbd:
+        Represents user input from a keyboard
+        or other input device.
+    -->
+
+    <p>
+        Press <kbd>Ctrl</kbd> + <kbd>C</kbd> to copy.
+    </p>
+
+
+    <!--
+        samp:
+        Represents sample output from a computer program.
+    -->
+
+    <p>
+        Program output:
+        <samp>Hello World</samp>
+    </p>
+
+
+    <!--
+        var:
+        Represents a variable in a mathematical expression
+        or programming context.
+    -->
+
+    <p>
+        The variable <var>x</var> represents a number.
+    </p>
+
+
+    <!--
+        data:
+        Associates human-readable content with
+        a machine-readable value.
+
+        The "value" attribute contains the machine-readable value.
+    -->
+
+    <p>
+        Product:
+        <data value="12345">Laptop</data>
+    </p>
+
+
+    <!--
+        time:
+        Represents a specific time, date, or duration.
+
+        The "datetime" attribute provides a machine-readable value.
+    -->
+
+    <p>
+        The event is on
+        <time datetime="2026-09-14">
+            September 14, 2026
+        </time>.
+    </p>
+
+
+    <!--
+        time can also represent a specific time.
+    -->
+
+    <p>
+        The meeting starts at
+        <time datetime="10:00">
+            10:00 AM
+        </time>.
+    </p>
+
+
+    <!--
+        dfn:
+        Represents the term being defined
+        within a surrounding definition.
+    -->
+
+    <p>
+        <dfn>HTML</dfn> is a markup language
+        used to structure webpages.
+    </p>
+
+
+    <!--
+        bdi:
+        Stands for "Bidirectional Isolation".
+
+        Used when text may have a different
+        text direction from the surrounding content.
+    -->
+
+    <p>
+        User:
+        <bdi>username</bdi>
+    </p>
+
+
+    <!--
+        bdo:
+        Stands for "Bidirectional Override".
+
+        Used to explicitly override the direction
+        of text.
+    -->
+
+    <p>
+        <bdo dir="rtl">
+            This text is displayed from right to left.
+        </bdo>
+    </p>
+
+
+    <!--
+        ruby:
+        Used for ruby annotations, commonly used
+        with East Asian typography.
+    -->
+
+    <ruby>
+
+        漢
+
+        <rt>
+            Kan
+        </rt>
+
+    </ruby>
+
+
+    <!--
+        rt:
+        Provides the annotation text used inside
+        a <ruby> element.
+    -->
+
+    <ruby>
+
+        日
+
+        <rt>
+            Japanese reading
+        </rt>
+
+    </ruby>
+
+
+    <!--
+        rp:
+        Provides fallback parentheses for browsers
+        that do not support ruby annotations.
+    -->
+
+    <ruby>
+
+        漢
+
+        <rp>(</rp>
+
+        <rt>
+            Kan
+        </rt>
+
+        <rp>)</rp>
+
+    </ruby>
+
+
+    <!--
+        wbr:
+        Stands for "Word Break Opportunity".
+
+        Indicates a location where the browser may
+        break a long word or URL if necessary.
+    -->
+
+    <p>
+        ThisIsAVeryLong<wbr>WordThatMayNeedBreaking
+    </p>
+
+
+    <!--
+        details:
+        Creates an expandable/collapsible section.
+        The content is hidden until the user opens it.
+    -->
+
+    <details>
+
+        <p>
+            This content is hidden by default.
+        </p>
+
+    </details>
+
+
+    <!--
+        summary:
+        Provides the visible heading/title for
+        a <details> element.
+    -->
+
+    <details>
+
+        <summary>
+            What is HTML?
+        </summary>
+
+        <p>
+            HTML is used to structure web pages.
+        </p>
+
+    </details>
+
+
+    <!--
+        open:
+        Makes a <details> element open by default.
+    -->
+
+    <details open>
+
+        <summary>
+            Open by Default
+        </summary>
+
+        <p>
+            This content is visible when the page loads.
+        </p>
+
+    </details>
+
+
+    <!--
+        dialog:
+        Represents a dialog box or modal window.
+    -->
+
+    <dialog open>
+
+        <p>
+            This is a dialog box.
+        </p>
+
+    </dialog>
+
+
+    <!--
+        progress:
+        Represents the completion progress
+        of a task.
+    -->
+
+    <p>
+        Download Progress:
+    </p>
+
+    <progress
+        value="70"
+        max="100"
+    >
+        70%
+    </progress>
+
+
+    <!--
+        meter:
+        Represents a scalar measurement within
+        a known range.
+
+        Examples:
+        - Disk usage
+        - Battery level
+        - Score
+        - Temperature
+    -->
+
+    <p>
+        Storage Usage:
+    </p>
+
+    <meter
+        value="70"
+        min="0"
+        max="100"
+    >
+        70%
+    </meter>
+
+
+    <!--
+        output:
+        Represents the result of a calculation
+        or user action.
+    -->
+
+    <form
+        oninput="result.value = Number(a.value) + Number(b.value)"
+    >
+
+        <input
+            type="number"
+            id="a"
+            name="a"
+            value="10"
+        >
+
+        +
+
+        <input
+            type="number"
+            id="b"
+            name="b"
+            value="20"
+        >
+
+        =
+
+        <output name="result">
+            30
+        </output>
+
+    </form>
+
+
+    <!--
+        template:
+        Contains HTML that is not rendered immediately.
+
+        JavaScript can later use the template
+        to create reusable pieces of HTML.
+    -->
+
+    <template id="card-template">
+
+        <article>
+
+            <h2>Card Title</h2>
+
+            <p>
+                This card can be cloned using JavaScript.
+            </p>
+
+        </article>
+
+    </template>
+
+
+    <!--
+        slot:
+        Defines a placeholder inside a Web Component
+        where external content can be inserted.
+
+        It is mainly used with Shadow DOM and
+        custom elements.
+    -->
+
+    <slot name="title">
+        Default Title
+    </slot>
+
+
+</body>
+</html>

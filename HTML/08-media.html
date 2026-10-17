@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HTML Media</title>
+</head>
+
+<body>
+
+    <!--
+        audio:
+        Used to embed audio content into a webpage.
+
+        The "controls" attribute gives the user
+        playback controls such as play, pause,
+        volume, and progress.
+    -->
+
+    <audio controls>
+        <source src="audio/music.mp3" type="audio/mpeg">
+    </audio>
+
+
+    <!--
+        controls:
+        Displays the browser's built-in media controls.
+
+        Without "controls", the user normally has
+        no way to control the audio/video through
+        the default browser interface.
+    -->
+
+    <audio controls>
+        <source src="audio/song.mp3" type="audio/mpeg">
+    </audio>
+
+
+    <!--
+        autoplay:
+        Tells the browser to start playing the media
+        automatically when possible.
+
+        Browsers often restrict autoplay when
+        audio is audible, so autoplay should be
+        used carefully.
+    -->
+
+    <audio autoplay>
+        <source src="audio/background.mp3" type="audio/mpeg">
+    </audio>
+
+
+    <!--
+        loop:
+        Causes the media to start again automatically
+        when it reaches the end.
+    -->
+
+    <audio controls loop>
+        <source src="audio/music.mp3" type="audio/mpeg">
+    </audio>
+
+
+    <!--
+        muted:
+        Starts the media in a muted state.
+        This is especially useful when autoplay
+        is required without audible sound.
+    -->
+
+    <audio controls muted>
+        <source src="audio/music.mp3" type="audio/mpeg">
+    </audio>
+
+
+    <!--
+        preload:
+        Gives the browser a hint about how much
+        media should be loaded before the user plays it.
+
+        Common values:
+        none     → Do not preload the media.
+        metadata → Load only metadata.
+        auto     → Browser may preload the media.
+    -->
+
+    <audio controls preload="metadata">
+        <source src="audio/song.mp3" type="audio/mpeg">
+    </audio>
+
+
+    <!--
+        source:
+        Specifies a media resource.
+
+        It is commonly used inside:
+        - <audio>
+        - <video>
+        - <picture>
+
+        The browser can choose a source that it supports.
+    -->
+
+    <audio controls>
+
+        <source
+            src="audio/song.mp3"
+            type="audio/mpeg"
+        >
+
+        <source
+            src="audio/song.ogg"
+            type="audio/ogg"
+        >
+
+        Your browser does not support the audio element.
+
+    </audio>
+
+
+    <!--
+        video:
+        Used to embed video content into a webpage.
+    -->
+
+    <video controls width="640">
+
+        <source
+            src="video/movie.mp4"
+            type="video/mp4"
+        >
+
+    </video>
+
+
+    <!--
+        width:
+        Specifies the width of the video.
+    -->
+
+    <video
+        controls
+        width="500"
+    >
+        <source
+            src="video/movie.mp4"
+            type="video/mp4"
+        >
+    </video>
+
+
+    <!--
+        height:
+        Specifies the height of the video.
+    -->
+
+    <video
+        controls
+        width="500"
+        height="300"
+    >
+        <source
+            src="video/movie.mp4"
+            type="video/mp4"
+        >
+    </video>
+
+
+    <!--
+        poster:
+        Specifies an image that is displayed
+        before the video starts playing.
+    -->
+
+    <video
+        controls
+        width="640"
+        poster="images/video-thumbnail.jpg"
+    >
+        <source
+            src="video/movie.mp4"
+            type="video/mp4"
+        >
+    </video>
+
+
+    <!--
+        loop:
+        Replays the video automatically
+        after it reaches the end.
+    -->
+
+    <video
+        controls
+        loop
+        width="640"
+    >
+        <source
+            src="video/loop.mp4"
+            type="video/mp4"
+        >
+    </video>
+
+
+    <!--
+        muted:
+        Starts the video without sound.
+    -->
+
+    <video
+        controls
+        muted
+        width="640"
+    >
+        <source
+            src="video/video.mp4"
+            type="video/mp4"
+        >
+    </video>
+
+
+    <!--
+        autoplay:
+        Attempts to start the video automatically.
+
+        Autoplay is commonly combined with "muted"
+        because browsers often restrict audible autoplay.
+    -->
+
+    <video
+        autoplay
+        muted
+        loop
+        width="640"
+    >
+        <source
+            src="video/background.mp4"
+            type="video/mp4"
+        >
+    </video>
+
+
+    <!--
+        preload:
+        Gives the browser a hint about how much
+        video data should be loaded before playback.
+
+        Common values:
+        none
+        metadata
+        auto
+    -->
+
+    <video
+        controls
+        preload="metadata"
+        width="640"
+    >
+        <source
+            src="video/movie.mp4"
+            type="video/mp4"
+        >
+    </video>
+
+
+    <!--
+        Multiple video sources:
+        Multiple <source> elements can be provided.
+        The browser uses the first source it supports.
+    -->
+
+    <video controls width="640">
+
+        <source
+            src="video/movie.mp4"
+            type="video/mp4"
+        >
+
+        <source
+            src="video/movie.webm"
+            type="video/webm"
+        >
+
+        Your browser does not support the video element.
+
+    </video>
+
+
+    <!--
+        track:
+        Used to provide timed text tracks for video.
+
+        It can be used for:
+        - Subtitles
+        - Captions
+        - Descriptions
+        - Other timed text
+    -->
+
+    <video controls width="640">
+
+        <source
+            src="video/movie.mp4"
+            type="video/mp4"
+        >
+
+        <track
+            src="subtitles/movie-en.vtt"
+            kind="subtitles"
+            srclang="en"
+            label="English"
+        >
+
+    </video>
+
+
+    <!--
+        kind:
+        Specifies the type of text track.
+
+        Common values:
+        subtitles
+        captions
+        descriptions
+        chapters
+        metadata
+    -->
+
+    <video controls>
+
+        <source
+            src="video/movie.mp4"
+            type="video/mp4"
+        >
+
+        <track
+            src="subtitles/en.vtt"
+            kind="subtitles"
+            srclang="en"
+            label="English"
+        >
+
+    </video>
+
+
+    <!--
+        srclang:
+        Specifies the language of the text track.
+        It uses a language code such as "en", "hi", "fr", etc.
+    -->
+
+    <video controls>
+
+        <source
+            src="video/movie.mp4"
+            type="video/mp4"
+        >
+
+        <track
+            src="subtitles/hindi.vtt"
+            kind="subtitles"
+            srclang="hi"
+            label="Hindi"
+        >
+
+    </video>
+
+
+    <!--
+        label:
+        Provides a human-readable name for a text track.
+        The name can be shown to the user when choosing
+        between different subtitle tracks.
+    -->
+
+    <video controls>
+
+        <source
+            src="video/movie.mp4"
+            type="video/mp4"
+        >
+
+        <track
+            src="subtitles/english.vtt"
+            kind="subtitles"
+            srclang="en"
+            label="English"
+        >
+
+        <track
+            src="subtitles/hindi.vtt"
+            kind="subtitles"
+            srclang="hi"
+            label="Hindi"
+        >
+
+    </video>
+
+
+    <!--
+        default:
+        Specifies that a track should be enabled
+        by default when the media starts.
+    -->
+
+    <video controls>
+
+        <source
+            src="video/movie.mp4"
+            type="video/mp4"
+        >
+
+        <track
+            src="subtitles/english.vtt"
+            kind="subtitles"
+            srclang="en"
+            label="English"
+            default
+        >
+
+    </video>
+
+
+</body>
+</html>

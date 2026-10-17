@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HTML Semantic Elements</title>
+</head>
+
+<body>
+
+    <!--
+        header:
+        Represents introductory content for a page,
+        section, article, or other content.
+
+        It commonly contains:
+        - Logo
+        - Heading
+        - Navigation
+        - Introduction
+    -->
+
+    <header>
+
+        <h1>My Website</h1>
+
+        <p>Welcome to my website.</p>
+
+    </header>
+
+
+    <!--
+        nav:
+        Represents a section containing navigation links.
+
+        It is commonly used for:
+        - Main navigation
+        - Website menu
+        - Page navigation
+    -->
+
+    <nav>
+
+        <a href="index.html">Home</a>
+
+        <a href="about.html">About</a>
+
+        <a href="services.html">Services</a>
+
+        <a href="contact.html">Contact</a>
+
+    </nav>
+
+
+    <!--
+        main:
+        Represents the main content of the document.
+
+        There should normally be only one <main>
+        element in a document.
+    -->
+
+    <main>
+
+        <h2>Welcome to the Main Content</h2>
+
+        <p>
+            This is the main content of the webpage.
+        </p>
+
+    </main>
+
+
+    <!--
+        section:
+        Represents a standalone section of content
+        that usually has a heading.
+
+        It is useful for dividing a page into
+        meaningful sections.
+    -->
+
+    <section>
+
+        <h2>About Us</h2>
+
+        <p>
+            We are learning HTML and frontend development.
+        </p>
+
+    </section>
+
+
+    <!--
+        article:
+        Represents independent, self-contained content
+        that could make sense on its own.
+
+        Common examples:
+        - Blog post
+        - News article
+        - Forum post
+        - Product review
+    -->
+
+    <article>
+
+        <h2>Learning HTML</h2>
+
+        <p>
+            HTML is used to structure web pages.
+        </p>
+
+    </article>
+
+
+    <!--
+        Multiple articles can exist inside a section.
+    -->
+
+    <section>
+
+        <h2>Latest Articles</h2>
+
+        <article>
+
+            <h3>HTML Basics</h3>
+
+            <p>
+                Learn the basic structure of HTML.
+            </p>
+
+        </article>
+
+        <article>
+
+            <h3>HTML Links</h3>
+
+            <p>
+                Learn how hyperlinks work.
+            </p>
+
+        </article>
+
+        <article>
+
+            <h3>HTML Images</h3>
+
+            <p>
+                Learn how to display images.
+            </p>
+
+        </article>
+
+    </section>
+
+
+    <!--
+        aside:
+        Represents content that is indirectly related
+        to the main content.
+
+        Common examples:
+        - Sidebar
+        - Related links
+        - Advertisements
+        - Additional information
+    -->
+
+    <aside>
+
+        <h2>Related Topics</h2>
+
+        <ul>
+
+            <li>
+                <a href="tags.html">HTML Tags</a>
+            </li>
+
+            <li>
+                <a href="links.html">HTML Links</a>
+            </li>
+
+            <li>
+                <a href="images.html">HTML Images</a>
+            </li>
+
+        </ul>
+
+    </aside>
+
+
+    <!--
+        footer:
+        Represents the footer of a page,
+        section, or article.
+
+        It commonly contains:
+        - Copyright information
+        - Contact information
+        - Related links
+        - Author information
+    -->
+
+    <footer>
+
+        <p>Copyright 2026 My Website</p>
+
+        <a href="contact.html">Contact Us</a>
+
+    </footer>
+
+
+    <!--
+        address:
+        Represents contact information for the
+        nearest article or body element.
+
+        It can contain:
+        - Email address
+        - Phone number
+        - Physical address
+        - Social/contact links
+    -->
+
+    <address>
+
+        Contact us:<br>
+
+        Email:
+        <a href="mailto:example@email.com">
+            example@email.com
+        </a>
+
+        <br>
+
+        Phone:
+        <a href="tel:+1234567890">
+            +1 234 567 890
+        </a>
+
+    </address>
+
+
+    <!--
+        search:
+        Represents a section containing controls
+        for searching or filtering content.
+
+        It can contain a search form or search input.
+    -->
+
+    <search>
+
+        <form>
+
+            <label for="search-box">
+                Search:
+            </label>
+
+            <input
+                type="search"
+                id="search-box"
+                name="q"
+                placeholder="Search..."
+            >
+
+            <button type="submit">
+                Search
+            </button>
+
+        </form>
+
+    </search>
+
+
+</body>
+</html>
